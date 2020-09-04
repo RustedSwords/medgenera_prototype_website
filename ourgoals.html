@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Prototype - Our Goals</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="body.css">
+<link rel="icon" type="image/png" href="logo.png">
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div id="top" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" style="color: white;">&#9776;</span>
+<div id="mySidenav" class="sidenav">
+ 
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+ <a href="index.html">Home</a>
+ 
+ <a href="whatwedo.html">Accomplishments</a>
+ 
+ <a href="ourgoals.html">Our Goals</a>
+ 
+ <a href="prototype.html">Shop</a>
+
+ <a href="donate.html">Donate</a>
+
+ <a href="about_contacts.html">About/Contacts</a>
+
+
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<img src="logo.png" height=50px width=50px style="display: inline; position: relative;top: 12px; ">
+<form style="position:relative; display: inline; bottom: 9px;">
+  <input type="text" id="search" name="search" placeholder="Search..">
+</form>
+
+<div id="social" style="position: relative; bottom: 5px;">
+<img style="position: relative; top: 12px;" src="facebook.png" height=57px width=57px> <img style="position: relative; top: 12px;" src="twitter.png" height=55px width=55px>
+<select style="position: relative; bottom: 10px;"><option>Select Language</option>
+<option>English</option>
+<option>Hindi</option>
+<option>Gujarati</option></select>
+</div>
+ 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div class="ourgoals">
+
+<div style="margin: 20px;">
+<p id="titl"> Our Goals</p>
+<button class="accordion">Primary Goals</button>
+<div class="panel">
+   <img src="accordian1.jpg" height= 200px width=200px style="float: left; margin: 10px">
+  <p style="display: inline; position: relative "><li>
+_____________________________________________________________________</li>
+
+<li>________________________________________________________________________________________________________________</li>
+<li>________________________________________________________________________________________________________________</li>
+
+<li>________________________________________________________________________________________________________________</li>
+</ul>
+</p>
+</div>
+
+<button class="accordion">__________</button>
+<div class="panel">
+    <img src="accordian2.jpg" height= 200px width=200px style="float: left; margin: 10px">
+  <p style="display: inline; position: relative;">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+</div>
+
+<button class="accordion">________</button>
+<div class="panel">
+   <img src="accordian3.jpg" height= 200px width=200px style="float: left; margin: 10px">
+  <p style="display: inline; position:relative">_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+</div>
+<button class="accordion">_________</button>
+<div class="panel">
+    <img src="accordian4.jpg" height= 200px width=200px style="float: left; margin: 10px">
+  <p style="display: inline; position:relative">
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+</p>
+</div>
+<button class="accordion">___________</button>
+<div class="panel">
+   <img src="accordian5.jpg" height= 200px width=200px style="float: left; margin: 10px">
+  <p style="display: inline; position: relative">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+    }
+}
+</script>
+
+
+<br> <br>
+<p id="titl"> Join Us :- Volunteership</p>
+</div><center>
+<p id="about">You can also join us in our goals and be  a part of the Modern Medical Development<br>
+Fill in your Email- ID to acquire more details on our Volunteership Programme.<br>The required information will be sent
+to your Email Address.</p>
+<input type="text" name="volunteer" placeholder="Enter Email.."></input>
+<br>
+
+<button id="my_btn"><span >Participate</span></button></center>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>An Email has been sent to the entered Email Address. Thanks for Participating!</h2>
+    </div>
+</div>
+</div>
+<script>var modal = document.getElementById('myModal');
+
+
+var btn = document.getElementById("my_btn");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
+</div>
+<div class="footer">
+    <section>
+    <img src="logo.png" width= 150px height=150px style="margin: 10px">
+</section>
+<p id="footer">Prototype.com&trade; Official Website
+<br>
+&copy;&nbsp;Copyright. All Rights Reserved.
+<br>
+The Website and its contents have been copyrighted.
+<br>Email:- admin@prototype.com
+<br>
+    <br><app>Download our App Prototype:-<a href="https://play.google.com">
+<img id="app" style="position: relative;top: 10px;" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.com"> <img id="app" style="position: relative; top: 10px"src="ios.png" width= 100px height= 35px></a>&nbsp;
+</app>  </p>
+    </div>
+ 
+ 
+  </div>
+ 
+  </div>
+</div> 
+</div>
+<script>
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+
+</html>

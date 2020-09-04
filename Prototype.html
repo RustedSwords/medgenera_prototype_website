@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Prototype</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="icon" type="image/jpg" href="logo.png">
+
+<body  onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div id="top1" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" style="color: white;">&#9776;</span>
+<div id="mySidenav" class="sidenav">
+ 
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+ <a href="index.html">Home</a>
+ 
+ <a href="whatwedo.html">Accomplishments</a>
+ 
+ <a href="ourgoals.html">Our Goals</a>
+ 
+ <a href="prototype.html">Shop</a>
+
+ <a href="donate.html">Donate</a>
+
+ <a href="about_contacts.html">About/Contacts</a>
+
+
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<img src="logo.png" height=50px width=50px style="display: inline; position: relative;top: 12px; ">
+<form style="position:relative; display: inline; bottom: 9px;">
+  <input type="text" id="search" name="search" placeholder="Search..">
+</form>
+
+<div id="social" style="position: relative; bottom: 5px;">
+<img style="position: relative; top: 12px;" src="facebook.png" height=57px width=57px> <img style="position: relative; top: 12px;" src="twitter.png" height=55px width=55px>
+<select style="position: relative; bottom: 10px;"><option>Select Language</option>
+<option>English</option>
+<option>Hindi</option>
+<option>Gujarati</option></select>
+</div>
+ <div id="healthpic">
+	<img src="healthpic.jpg" style="width: 100%; height: 550px;">
+<p style="position: absolute;text-align: center; width: 100%; height: 50%;line-height: 250px; bottom: 30px;font-size: 70px;font-family: gotham-light;color: white;background-color:rgba(50,50,50,0.5); "> Welcome to Prototype!  </p>
+
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div class="prototype" style="background-color:white">
+
+<p style="font-size: 35px; margin: 27px">_________________</p>
+<div id="item"><center><p> ____________</p><img src="1.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+
+<div id="item"><center><p> ___________</p><img src="2.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> ___________</p><img src="3.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> ___________</p><img src="4.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> ________</p><img src="5.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _________</p><img src="6.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________-</p><img src="7.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p>__________</p><img src="8.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________-</p><img src="9.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> ____________</p><img src="10.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> ________</p><img src="11.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _______</p><img src="12.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+
+
+<p style="font-size: 35px; margin: 27px">_________________</p>
+
+<div id="item"><center><p> _________</p><img src="20.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+
+<div id="item"><center><p> ___________</p><img src="21.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________</p><img src="22.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _________</p><img src="23.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _________-</p><img src="24.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________</p><img src="25.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _______</p><img src="26.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> _________-</p><img src="27.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________</p><img src="28.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+<div id="item"><center><p> __________-</p><img src="29.jpg" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+
+
+
+<p style="font-size: 35px; margin: 27px">___________</p>
+
+<div id="item"><center><p> ______</p><img src="logo.png" style="width: 120px;height: 120px;margin-top: 40px; border: 2px solid white; border-radius: 5px;">
+	<br><br><button id="my_btn" style="width: 100px;color: black; height: 30px;background-color: #3498db; margin: 0px;font-size: 15px;padding: 0px;"><span>Buy</span></button>
+</center>
+</div>
+
+
+
+  
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Product Added to Cart!</h2>
+    </div>
+</div>
+</div>
+
+<script>var modal = document.getElementById('myModal');
+ 
+ 
+var btn = document.getElementById("my_btn");
+ 
+ 
+var span = document.getElementsByClassName("close")[0];
+ 
+ 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+ 
+ 
+span.onclick = function() {
+    modal.style.display = "none";
+}
+ 
+ 
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
+ 
+   
+
+
+
+
+
+</div>
+
+	
+<script>var modal = document.getElementById('myModal');
+ 
+var btn = document.getElementById("my_btn");
+ 
+var span = document.getElementsByClassName("close")[0];
+ 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+ 
+span.onclick = function() {
+    modal.style.display = "none";
+}
+ 
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
+
+</div>
+
+<div class="footer">
+    <section>
+    <img src="logo.png" width= 150px height=150px style="margin: 10px">
+</section>
+<p id="footer">Prototype.com&trade; Official Website
+<br>
+&copy;&nbsp;Copyright. All Rights Reserved.
+<br>
+The Website and its contents have been copyrighted.
+<br>Email:- admin@prototype.com
+<br>
+    <br><app>Download our App :-<a href="https://play.google.com/">
+<img id="app" style="position: relative;top: 10px;" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.apple.com"> <img id="app" style="position: relative; top: 10px"src="ios.png" width= 100px height= 35px></a>&nbsp;
+</app>  </p>
+    </div>
+ 
+ 
+  </div>
+</div>
+</div>
+</body>
+ 
+</html>

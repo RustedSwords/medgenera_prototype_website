@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Prototype - About/Contacts</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="body.css">
+<link rel="icon" type="image/png" href="logo.png">
+
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div id="top" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" style="color: white;">&#9776;</span>
+<div id="mySidenav" class="sidenav">
+ 
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+ <a href="index.html">Home</a>
+ 
+ <a href="whatwedo.html">Accomplishments</a>
+ 
+ <a href="ourgoals.html">Our Goals</a>
+ 
+ <a href="prototype.html">Shop</a>
+
+ <a href="donate.html">Donate</a>
+
+ <a href="about_contacts.html">About/Contacts</a>
+
+
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<img src="logo.png" height=50px width=50px style="display: inline; position: relative;top: 12px; ">
+<form style="position:relative; display: inline; bottom: 9px;">
+  <input type="text" id="search" name="search" placeholder="Search..">
+</form>
+
+<div id="social" style="position: relative; bottom: 5px;">
+<img style="position: relative; top: 12px;" src="facebook.png" height=57px width=57px> <img style="position: relative; top: 12px;" src="twitter.png" height=55px width=55px>
+<select style="position: relative; bottom: 10px;"><option>Select Language</option>
+<option>English</option>
+<option>Hindi</option>
+<option>Gujarati</option></select>
+</div>
+  
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="about">
+
+<div><img src="logo.png" width= 300px height= 300px style="margin: 10px;" ></div><br><p id="titl">Prototype- ______<br>
+ About Us</p>
+<p id="about">
+________________________________________________________________ ____________________________________________________________ __________ ___________________ _____________________________ ___________________________ ___________________________________ ______________ _______________________________________ ____________________ ________________________________________.
+<br>
+<br>
+______________________________________________________
+<br>
+<br></p>
+<p id="title">Privacy Policy:-</p> <br>
+<p id="about">
+THIS WEBSITE IS PROVIDED TO YOU ON AN "AS IS" AND "WHERE-IS" BASIS, WITHOUT ANY WARRANTY. PROTOTYPE ORGANISATION, FOR ITSELF AND ANY THIRD PARTY PROVIDING MATERIALS, 
+SERVICES, OR CONTENT TO THIS WEBSITE, MAKES NO REPRESENTATIONS OR WARRANTIES, EITHER EXPRESS, IMPLIED, STATUTORY OR OTHERWISE OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS, WITH RESPECT TO THE WEBSITE, THE INFORMATION OR ANY PRODUCTS OR SERVICES
+ TO WHICH THE INFORMATION REFERS. AGRO-CART ORGANISATION WILL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO, DIRECT, 
+INDIRECT, INCIDENTAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, ARISING FROM OR CONNECTED WITH THE SITE, INCLUDING BUT NOT LIMITED TO, YOUR USE OF THIS SITE OR 
+YOUR INABILITY TO USE THE SITE, EVEN IF THE AGRO-CART ORGANISATION HAS PREVIOUSLY BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+<br><br></p>
+<p id="title">
+
+Contacts:-</p><br>
+<p id="about">
+The Prototype Organisation:- admin@prototype.com<br>
+Postal:-The Prototype Organisation, Sector 11 , Reliance Greens, Jamnagar 361142, India<br>
+Phone No:- 0288 4036242<br>
+Fax:- 3698754<br>
+<br><br></p>
+<p id="title">Our App- Prototype</p><br>
+<p id="about"><a href="https://play.google.com">
+<img id="app" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.com"> <img id="app" src="ios.png" width= 100px height= 35px></a>&nbsp;
+</p></div>
+
+<div class="footer">
+	
+    <section>
+    <img src="logo.png" width= 150px height=150px style="margin: 10px">
+</section>
+<p id="footer">Prototype.com&trade; Official Website
+<br>
+&copy;&nbsp;Copyright. All Rights Reserved.
+<br>
+The Website and its contents have been copyrighted.
+<br>Email:- admin@prototype.com
+<br>
+    <br><app>Download our App Prototype:-<a href="https://play.google.com">
+<img id="app" style="position: relative;top: 10px;" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.com"> <img id="app" style="position: relative; top: 10px"src="ios.png" width= 100px height= 35px></a>&nbsp;
+</app>  </p>
+    </div>
+ 
+  </div>
+
+</div>
+</div>
+</body>
+ 
+</html>

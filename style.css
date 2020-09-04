@@ -1,0 +1,473 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+   font: 400 15px/1.8 verdana;
+   color: #777;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: rgba(204, 204, 204, 0.4);
+  color: black;
+  padding: 20px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.caption span.footer {
+  background-color:rgba(255,255,255,0.5);
+  color: black;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2d5d7d;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #0099ff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+input[type=text]#search {
+    width: 150px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid rgb(0,0,100);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+
+}
+
+input[type=text]#search:focus {
+	width: 44%;
+}
+div#social  {
+	
+	display: inline;
+	float: right;
+	margin: 0px;
+	
+}
+div#top{ 
+	width: 100%;
+	height: 65px;	
+	background-color: rgba(50, 50, 50, 0.0);
+	padding-bottom: 13px;	
+             clear: both;
+             position: relative;
+             top: 5px;
+}
+div#top1{
+	width: 100%;
+	height: 65px;	
+	background-color: rgba(52, 152, 219, 0.09);
+	padding-bottom: 13px;	
+}
+div#topind{
+	width: 100%;
+	height: 65px;	
+	background-color: rgb(248, 247, 249);
+	padding-bottom: 13px;
+}
+div.footer{
+	background-color: rgb(50,50,50);
+	color: white;
+	margin-top: 50px;	
+	text-align: left;
+}
+
+div.footer section img{
+	float:left;
+	
+}
+
+div.footer p {
+	
+	display: inline-block;
+}
+
+app{
+	font-size: 20px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+input[type=text],input[type=number]{
+	width: 300px;
+	font-size: 17px;
+	border-color: rgb(50,50,50);
+	border-radius: 3px;
+	padding: 10px;
+	margin: 5px;
+}
+select{
+	width: 325px;
+	font-size: 17px;
+	border-color: rgb(50,50,50);
+	border-radius: 4px;
+	padding: 10px;
+	margin: 5px;
+}
+#my_btn {
+  border-radius: 4px;
+  background-color: rgb(50,50,50);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#my_btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#my_btn span:after {
+  content: '>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#my_btn:hover span {
+  padding-right: 25px;
+}
+
+#my_btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+ border-top: 16px solid blue;
+ border-right: 16px solid white; 
+ border-bottom: 16px solid white;
+ border-left: 16px solid white;
+
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 3s;
+  animation-name: animatebottom;
+  animation-duration: 3s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+div.about,div.ourgoals,div.prototype{
+	position: relative;	
+	width: 98%; 
+	margin:20px auto;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	border-color: rgb(50,50,50);
+	border-size: 2px;
+	border-style: solid;
+	color: rgb(50,50,50);
+	font-size: 17px;
+}
+img#app:hover{
+	border: solid 1px rgb(255,255,255);
+	
+}
+div.about div{
+	position: relative;
+	left: 500px;
+}
+div.about p#about{
+	margin: 10px;
+}
+p#title ,p#titl {
+	font-size: 25px;
+	font-weight: 100px;
+	margin: 10px;
+}
+p#titl{
+	text-align: center;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid rgb(50,50,50);
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(50,50,50);
+    color: white;
+}
+
+button.accordion {
+    background-color: rgb(50,50,50);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 22px;
+}
+
+
+button.accordion.active, button.accordion:hover {
+    background-color:white;
+    color: black;
+}
+
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+
+div.panel.show {
+    
+    opacity: 1;
+    max-height: 500px;
+}
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; 
+}
+div#healthpic{
+	position:relative;
+	width: 100%;
+	margin: 0;	
+}
+
+div#item{
+	width: 200px;
+	height: 300px;
+	background-color: rgba(255,255,255,1);
+	color: black;
+	border-radius: 7px;
+	border: 2px solid black;
+	margin: 27px;
+	display: inline-block;
+	
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
+  position: relative;
+  opacity: 0.70;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("2.jpg");
+  min-height:600px;
+}
+
+.bgimg-3 {
+  background-image: url("3.jpg");
+  min-height: 600px;
+}
+.bgimg-4 {
+  background-image: url("4.jpg");
+  min-height: 600px;
+}
+
+app{
+	font-size: 20px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+div#donate{
+	position: relative;
+	text-align: left;
+	width: 600px; 
+	margin:20px auto;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	border-color: rgb(50,50,50);
+	border-size: 2px;
+	border-style: solid;
+	color: rgb(50,50,50);
+	font-size: 17px;
+}
+div#donate table{
+	
+	width: 500px;
+	margin: 0 auto;
+}
+p#donate{
+	font-size: 25px;
+	color: #2196f3;
+	font-weight: 100px;

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Prototype - Home</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="body.css">
+<link rel="icon" type="image/png" href="logo.png">
+
+<body onload="myFunction()" style="margin:0;">
+<div id="loader"></div>
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<div id="top" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" style="color: white;">&#9776;</span>
+<div id="mySidenav" class="sidenav">
+ 
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+ <a href="index.html">Home</a>
+ 
+ <a href="whatwedo.html">Accomplishments</a>
+ 
+ <a href="ourgoals.html">Our Goals</a>
+ 
+ <a href="prototype.html">Shop</a>
+
+ <a href="donate.html">Donate</a>
+
+ <a href="about_contacts.html">About/Contacts</a>
+
+
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<img src="logo.png" height=50px width=50px style="display: inline; position: relative;top: 12px; ">
+<form style="position:relative; display: inline; bottom: 9px;">
+  <input type="text" id="search" name="search" placeholder="Search..">
+</form>
+
+<div id="social" style="position: relative; bottom: 5px;">
+<img style="position: relative; top: 12px;" src="facebook.png" height=57px width=57px> <img style="position: relative; top: 12px;" src="twitter.png" height=55px width=55px>
+<select style="position: relative; bottom: 10px;"><option>Select Language</option>
+<option>English</option>
+<option>Hindi</option>
+<option>Gujarati</option></select>
+</div>
+
+ 
+ 
+ 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<center>
+<div id="donate">
+<center><p id="donate">Donate<br>Support Us And Stand For Our Cause!</p></center>
+<table>
+<tr>
+<td>Name:- </td>
+<td><input   type="text" name="name" placeholder="Enter Name.."></td>
+</tr>
+<tr>
+<td>Email ID:- </td>
+<td><input  type="text" name="email" placeholder="Enter Email ID.."></td>
+</tr>
+<tr>
+<td>Payment Type:-</td>
+<td><select><option> Paypal</option><option>Bitcoin</option><option>Net Banking</option><option>Credit Card</option><option>Debit Card</option></td>
+</tr>
+<tr>
+<td>Payment Amount:- </td>
+<td><input  type="number" name="money" min=0 max=500000></td>
+</tr>
+<tr>
+<td>Address:- </td>
+<td><input   type="text" name="adress" placeholder="Enter Address.."></td>
+</tr>
+<tr>
+<td>Mobile No.:-</td>
+<td><input  type="number" name="number" min=1000000000 max=9999999999></td>
+</tr>
+</table>
+<center>
+<button id="my_btn"><span >Donate </span></button></center>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2>Thanks for Donating! We appreciate your help.</h2>
+    </div>
+</div>
+</div>
+
+<script>var modal = document.getElementById('myModal');
+ 
+ 
+var btn = document.getElementById("my_btn");
+ 
+ 
+var span = document.getElementsByClassName("close")[0];
+ 
+ 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+ 
+ 
+span.onclick = function() {
+    modal.style.display = "none";
+}
+ 
+ 
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}</script>
+ 
+   
+  </div>
+
+ 
+<div class="footer">
+<section>
+    <img src="logo.png" width= 150px height=150px style="margin: 10px">
+</section>
+<p id="footer">Prototype.com&trade; Official Website
+<br>
+&copy;&nbsp;Copyright. All Rights Reserved.
+<br>
+The Website and its contents have been copyrighted.
+<br>Email:- admin@prototype.com
+<br>
+    <br><app>Download our App Prototype:-<a href="https://play.google.com">
+<img id="app" style="position: relative;top: 10px;" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.com"> <img id="app" style="position: relative; top: 10px"src="ios.png" width= 100px height= 35px></a>&nbsp;
+</app>  </p>
+    </div>
+ 
+ 
+  </div>
+</div>
+</div>
+
+</body>
+ 
+</html>

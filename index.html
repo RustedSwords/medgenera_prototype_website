@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Prototype - Home</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="logo.png">
+
+<body>
+
+<div id="topind" >
+<span style="font-size:30px;cursor:pointer" onclick="openNav()" style="color: white;">&#9776;</span>
+<div id="mySidenav" class="sidenav">
+ 
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ 
+ <a href="index.html">Home</a>
+ 
+ <a href="whatwedo.html">Accomplishments</a>
+ 
+ <a href="ourgoals.html">Our Goals</a>
+ 
+ <a href="prototype.html">Shop</a>
+
+ <a href="donate.html">Donate</a>
+
+ <a href="about_contacts.html">About/Contacts</a>
+
+
+</div>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<img src="logo.png" height=50px width=50px style="display: inline; position: relative;top: 12px; ">
+<span class="border" style="font-size: 25px;border-radius: 1px; top: -2px; position: relative;">Prototype.com</span>
+<form style="position:relative; display: inline; bottom: 9px;">
+  <input type="text" id="search" name="search" placeholder="Search..">
+</form>
+
+<div id="social" style="position: relative; bottom: 5px;">
+<img style="position: relative; top: 12px;" src="facebook.png" height=57px width=57px> <img style="position: relative; top: 12px;" src="twitter.png" height=55px width=55px>
+<select style="position: relative; bottom: 10px;"><option>Select Language</option>
+<option>English</option>
+<option>Hindi</option>
+<option>Gujarati</option></select>
+</div>
+
+<div class="bgimg-1">
+	<video id="myVideoplayer" style="width: 100%; height: 100%;" autoplay="false" > 
+  <source src="video.mp4" type="video/mp4" />
+</video>
+
+<script type="text/javascript">
+   window.onload = playVideoTeaserFrom(3,40.5);   
+
+   function playVideoTeaserFrom (startTime, endTime) {
+       var videoplayer = document.getElementById("myVideoplayer");  
+
+       videoplayer.currentTime = startTime; 
+       videoplayer.play();
+
+       var stopVideoAfter = (endTime - startTime) * 1000;  
+       setTimeout(function(){
+           videoplayer.pause();
+       }, stopVideoAfter);
+
+   }
+ </script>
+  <div class="caption">
+
+    <span class="border" style="font-size: 50px;border-radius: 10px; top: 55px; position: relative;">Prototype.com</span>
+  </div>
+</div>
+
+<div style="color: #0000;background-color:white;text-align:center;font-size: 22px;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">What We Do</h3>
+  <p ><ul>
+<li>____________________________________________________________________</li>
+
+<li>____________________________________________________________________</li>
+
+<li>____________________________________________________________________</li>
+
+</ul>
+
+</p></div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:35px;color: #000;">Our Goals</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;font-size: 22px;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p><ul>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+</ul></p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:35px;color: #000;"> Introducing ________</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;font-size: 22px;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Advantages<ul>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+<li>____________________________________________________________________</li>
+</ul></p>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">________________________________________________________________</span>
+  </div>
+</div>
+
+
+<div class="footer" style="margin:0">
+    <section>
+    <img src="logo.png" width= 150px height=150px style="margin: 10px">
+</section>
+<p id="footer">Prototype.com&trade; Official Website
+<br>
+&copy;&nbsp;Copyright. All Rights Reserved.
+<br>
+The Website and its contents have been copyrighted.
+<br>Email:- admin@prototype.com
+<br>
+    <br><app>Download our App Prototype:-<a href="https://play.google.com">
+<img id="app" style="position: relative;top: 10px;" src="android.png" width= 100px height= 35px></a>&nbsp;
+<a href="https://itunes.com"> <img id="app" style="position: relative; top: 10px"src="ios.png" width= 100px height= 35px></a>&nbsp;
+</app>  </p>
+    </div>
+</div>
+</body>
+</html>
